@@ -74,8 +74,8 @@ DEFAULT_1P_BATTER = "플레이어"
 DEFAULT_1P_RIGHT = True  # 우타
 
 # 2인 모드 기본 팀 이름 (원정·홈)
-DEFAULT_TEAM_AWAY = "SK"
-DEFAULT_TEAM_HOME = "두산"
+DEFAULT_TEAM_AWAY = "플레이어A"
+DEFAULT_TEAM_HOME = "플레이어B"
 
 # 1인 모드 (Hitting Challenge) — 누적 점수·라운드별 아웃·목표
 SOLO_OUTS_START = 8            # 1라운드 아웃
@@ -96,15 +96,13 @@ DEFAULT_LINEUP = [f"플레이어{i}" for i in range(1, 10)]
 DEFAULT_RIGHT = [True] * 9
 
 # 2인 모드 원정팀(AWAY) 기본 라인업·좌우타·선발투수
-DEFAULT_LINEUP_AWAY = ["정근우", "박재상", "김재현", "박정권", "박재홍",
-                       "최정", "박경완", "나주환", "김강민"]
-DEFAULT_RIGHT_AWAY = [True, False, False, False, True, True, True, True, True]
-DEFAULT_PITCHER_AWAY = "김광현"
-DEFAULT_PITCHER_RIGHT_AWAY = False  # 좌투
+DEFAULT_LINEUP_AWAY = [f"플레이어{i}" for i in range(1, 10)]
+DEFAULT_RIGHT_AWAY = [True] * 9
+DEFAULT_PITCHER_AWAY = "플레이어10"
+DEFAULT_PITCHER_RIGHT_AWAY = True  # 우투
 
 # 2인 모드 홈팀(HOME) 기본 라인업·좌우타·선발투수
-DEFAULT_LINEUP_HOME = ["민병헌", "허이준", "최정우", "김재환", "박건우",
-                       "오재일", "양의지", "허경민", "김재호"]
-DEFAULT_RIGHT_HOME = [True, True, True, False, True, False, True, True, True]
-DEFAULT_PITCHER_HOME = "니퍼트"
+DEFAULT_LINEUP_HOME = [f"플레이어{i}" for i in range(1, 10)]
+DEFAULT_RIGHT_HOME = [True] * 9
+DEFAULT_PITCHER_HOME = "플레이어10"
 DEFAULT_PITCHER_RIGHT_HOME = True  # 우투
